@@ -1,0 +1,128 @@
+body {
+  width: 350px;
+  height: 500px;
+  margin: 0;
+  padding: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.connect-button {
+  background-color: #512da8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.connect-button:hover {
+  background-color: #673ab7;
+}
+
+.wallet-list {
+  overflow-y: auto;
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.wallet-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wallet-item:last-child {
+  border-bottom: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.generate-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.generate-button:hover {
+  background-color: #66bb6a;
+}
+
+.generate-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.copy-button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.copy-button:hover {
+  background-color: #42a5f5;
+}
+
+.status {
+  text-align: center;
+  margin-top: 10px;
+  color: #666;
+}
+/* Add these styles to your existing CSS */
+.container.full-page {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.full-page .wallet-list {
+  height: 400px;
+  max-height: 60vh;
+}
+/* Add this to your existing CSS */
+.full-page-button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.full-page-button:hover {
+  background-color: #f57c00;
+}

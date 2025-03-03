@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "SniperFi3",
+  "version": "1.0.0",
+  "description": "HD wallet extension that connects to Phantom wallet",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "chrome_url_overrides": {
+    "newtab": "fullpage.html"
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
